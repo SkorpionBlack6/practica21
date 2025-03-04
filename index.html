@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 21</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function getValores(){
+            let div = document.getElementById("div4");
+            console.log(div);
+            console.log(div.getAttribute('class'));
+            console.log(div.getAttribute('valorpersonalizado'))
+        }
+        function setValores(){
+            let div = document.getElementById("div4");
+            div.setAttribute('valorpersonalizado', 7);
+            console.log(div.getAttribute('valorpersonalizado'));
+        }
+    </script>
 </head>
 <body>
     <h1>Práctica 21</h1>
@@ -13,5 +26,13 @@
     <h3>No more paper</h3>
     <p>Hola mundo</p>
     <div><img src="img/juasa.jfif"></div>
+    <hr>
+    <div id="div1" class="cuadro">Div 1</div>
+    <div id="div2" class="cuadro">Div 2</div>
+    <div id="div3" class="cuadro">Div 3</div>
+    <div id="div4" class="cuadro" valorpersonalizado = "7siete">Div 4</div>
+    <div id="div5" class="cuadro">Div 5</div>
+    <button type="button" onclick="getValores()">Get valores</button>
+    <button type="button" onclick="setValores()">Set valores</button>
 </body>
 </html>
